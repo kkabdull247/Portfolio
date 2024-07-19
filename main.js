@@ -146,7 +146,7 @@ function animateWords() {
 
     words.forEach((word, index) => {
         tl.to(h2, { opacity: 1, duration: 1 }) // Show the h2 element
-          .to(h2, { opacity: 0, duration: 1, delay: 1 }); // Hide the h2 element
+          .to(h2, { opacity: 0, duration: 1, delay: 0.5 }); // Hide the h2 element
 
         if (index < words.length - 1) {
             tl.set(h2, { textContent: words[index + 1] }); // Set new text content
